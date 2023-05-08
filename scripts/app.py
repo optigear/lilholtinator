@@ -28,9 +28,9 @@ LATENT_MODES = [
     "average per 4.27s (broken on small files)",
     "average per voice file (broken on small files)",
 ]
-os.system("cd ..")
-os.system("python setup.py install")
 def main():
+    os.system("cd ..")
+    os.system("python setup.py install")
     conf = TortoiseConfig()
     ar_checkpoint = st_file_selector(
         st, path=conf.AR_CHECKPOINT, label="Select GPT Checkpoint", key="pth"
